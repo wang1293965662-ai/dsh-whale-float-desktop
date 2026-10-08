@@ -1,0 +1,30 @@
+{
+  "name": "dsh-whale-float-desktop",
+  "version": "2.0.0",
+  "description": "小鲸鱼浮窗（电脑版 · DSH Web GUI 前端插件）：余额/峰谷时段 + 实时花销气泡 + 锚定不跳的开合动画；鼠标拖拽/悬停适配，自带便携后端与立绘（pet-lite + pet-art.png）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/",
+    "server/",
+    "cordis.patch.yml",
+    "install.mjs",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT"
+}
